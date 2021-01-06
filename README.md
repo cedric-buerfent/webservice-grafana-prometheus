@@ -1,3 +1,7 @@
 # webservice-grafana-prometheus
 
-Using python together with libraries web.py and yaml, we can access prometheus.yml file to edit it: adding host, IP, checking config etc.
+Grafana has one drawback: we cannot easily add hosts and services!
+
+So we present here a  "bridge":
+Using python together with the python libraries web.py and yaml, we can access prometheus.yml file via a webservice: 
+And tadaaaa: we can now: add hosts, add services, checking and reloading configs etc.
