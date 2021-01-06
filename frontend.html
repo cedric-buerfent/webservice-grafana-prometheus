@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+ <meta charset="utf-8"/>
+ <!--    ACHTUNG DOCUMENT in UTF8-BOM GESPEICHERT! -->
+ <!--       wichtig für Umlaute! -->
+ <!-- Verwendet webservice hier: see systemctl status bastion -->
+
+ <title>Prometheus YML-Edit</title>
+<style>
+  <!-- some CSS -----------------  -->
+  /*  . Klasse */
+  /*  # ID     */
+</style> 
+  <!-- offline jquery in local directory -->
+  <script src="jquery-3.4.1.min.js"></script>
+  <!-- Custom Javascript Code here -->
+  <script src="frontend.js"></script>
+ 
+</head>
+<body>
+<center>
+ <table border="0">
+     <tr><td  align="center" style="background-color: #EEEFD5;">Add Ping Prometheus<td></tr>
+     <tr>
+      <td>
+        <table border="0">
+         <tr>
+	      <td align="right">Hostname</td>
+	      <td><input type="text" id="input_hostname"  name="input_hostname" style="background-color: #FFEFD5;" size="30"></td>
+	     </tr>
+	     <tr>
+	      <td align="right">IP</td>
+	      <td><input type="text" id="input_ip"  name="input_ip" style="background-color: #FFEFD5;" size="30"></td>
+	     </tr>
+	     <tr>
+	      <td align="right">Group</td>
+	      <td><input type="text" id="input_group"  name="input_group" style="background-color: #FFEFD5;" size="30"></td>
+	     </tr>
+	     </tr>	     
+	     </table>
+	  </td>
+	 </tr>
+	 <tr>
+	   <td align="center">
+	    <input id="button_create_ping" type="submit" name="Knopf" value="Create Ping">
+	    <input id="button_delete_ping" type="submit" name="Knopf" value="Delete Ping">
+	    </td>
+	    <div id="singlestat" style="color:blue;"></div>
+	   </td>	   
+	 </tr>
+	 <tr>
+	 	<td align="center">
+	    <input id="button_create_netdata" type="submit" name="Knopf" value="Create Linux Netdata Agent">
+	    <input id="button_delete_netdata" type="submit" name="Knopf" value="Delete Linux Netdata Agent">
+	    </td>
+    </tr>	
+	 <tr>
+	 	<td align="center">
+	    <input id="button_create_wmi" type="submit" name="Knopf" value="Create Windows WMI Agent">
+	    <input id="button_delete_wmi" type="submit" name="Knopf" value="Delete Windows WMI Agent">
+	    </td>
+	</tr>		    
+			    
+	  <tr><td  align="center" style="background-color: #EEEFD5;">Debug Test<td></tr>
+	      
+	     
+	 
+	  <!-- DEBUG Buttons to send manually some commands without GUI. do display:true or display:none to show or hide them -->
+	  <tr><td> <input id="button_test"   style="display:true" type="submit" name="Testknopf" value="Test Webservice"></td></tr>
+	  <tr><td> <input id="button_test2"  style="display:true" type="submit" name="Testknopf" value="Add ping"></td></tr>
+	  <tr><td> <input id="button_test3"  style="display:true" type="submit" name="Testknopf" value="Config Check"></td></tr>
+	  <tr><td> <input id="button_test4"  style="display:true" type="submit" name="Testknopf" value="Reload"></td></tr>
+	  <tr><td> <input id="button_test2a" style="display:true" type="submit" name="Testknopf" value="Delete ping"></td></tr>
+	  <tr><td> <input id="button_test3a" style="display:true" type="submit" name="Testknopf" value="Create Linux Netdata Agent"></td></tr>
+	  <tr><td> <input id="button_test3b" style="display:true" type="submit" name="Testknopf" value="Delete Linux Netdata Agent"></td></tr>
+	  <tr><td> <input id="button_test3c" style="display:true" type="submit" name="Testknopf" value="Create Windows WMI Agent"></td></tr>
+	  <tr><td> <input id="button_test3d" style="display:true" type="submit" name="Testknopf" value="Delete Windows WMI Agent"></td></tr>
+	  <tr><td> <input id="button_test4a" style="display:none" type="submit" name="Testknopf" value="Send_POST 1 (json)"></td></tr>
+	  <tr><td> <input id="button_test5"  style="display:none" type="submit" name="Testknopf" value="Get_form_vals"></td></tr>	  
+	  <tr><td> <input id="button_test6"  style="display:none" type="submit" name="Testknopf" value="Login"></td></tr>
+	  <tr><td> <input id="button_test7"  style="display:none" type="submit" name="Testknopf" value="Get-Val-After-Login"></td></tr>
+	  <!-- checked  if localhost -->
+	  <tr><td> <input id="enable_local"  style="display:true" type="checkbox" name="enable_local" value="enable_local">localhost enabled</td></tr>
+	  
+	  
+ </table>
+       </tr>
+ 	<!-- Ein Augabe-Label -->
+    <div id="divers_output_label_001" style="display:true" ></div>
+ 
+ </center>
+</body>
+</html>
