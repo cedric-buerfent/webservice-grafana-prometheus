@@ -8,7 +8,7 @@ So we present here a  "bridge":
 Using python together with the python libraries web.py and yaml, we can access prometheus.yml file via a webservice: 
 And tadaaaa: we can now: add hosts, add services, checking and reloading configs etc.
 
-Examples:
+## Command Examples:
 
 - Add Ping
 - Check Config
@@ -21,6 +21,7 @@ Examples:
 - Delete Windows WMI Agent
 - ....
 
+## Webservice commands:
 
 - http://172.24.9.58:9091/ping?hostname=srv-test3&ip=99.99.99.99&group=Group-Test1
 - http://172.24.9.58:9091/configcheck
