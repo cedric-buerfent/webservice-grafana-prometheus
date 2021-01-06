@@ -1,5 +1,7 @@
 # webservice-grafana-prometheus
 
+Small documentation. Start 6/1/2020 CB
+
 Grafana has one drawback: we cannot easily add hosts and services!
 
 So we present here a  "bridge":
