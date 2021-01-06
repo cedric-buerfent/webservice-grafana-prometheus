@@ -34,4 +34,4 @@ And tadaaaa: we can now: add hosts, add services, checking and reloading configs
 - http://172.24.9.58:9091/deletewmiagent?ip=127.0.0.1&hostname=wmitest&group=Group_TEST
 - ....
 
-todo small changes
+
